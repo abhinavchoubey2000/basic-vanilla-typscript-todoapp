@@ -1,0 +1,81 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#app {
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#input-form {
+	padding: 20px 20px;
+	display: flex;
+	gap: 1.2rem;
+}
+#task-input {
+	font-size: 1.4rem;
+	outline: none;
+	color: black;
+	border: none;
+	background-color: white;
+	padding: 10px 8px;
+	border-radius: 10px;
+}
+
+#add-task-btn {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 10px 20px;
+	gap: 20px;
+	font-size: 20px;
+	color: black;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: #ecf028;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+.task-completed{
+	text-decoration: line-through;
+}
+#todolist-container {
+	background: #2e2c2c;
+	width: 70%;
+	height: 70dvh;
+	overflow: auto;
+	padding: 5px 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#task-container {
+	display: flex;
+	align-items: baseline;
+	gap: 20px;
+	padding: 10px 8px;
+	letter-spacing: 3px;
+	font-size: small;
+	background: #000;
+}
+#delete-task-btn {
+	border: none;
+	padding: 5px 10px;
+	border-radius: 6px;
+	background: #e60e0e;
+}
